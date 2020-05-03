@@ -12,12 +12,12 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getProducts(){
+  getProducts() {
     this.mainService.getProducts(this.mainService.productsRequest);
   }
   addToCart(product) {
     this.mainService.cart.push({ product });
-    console.log('dodano do koszyka:');
+    console.log('dodano do koszyka produkt:');
     console.log(product);
   }
 }
